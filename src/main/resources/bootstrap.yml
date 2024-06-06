@@ -1,0 +1,36 @@
+server:
+  port: 8007
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+    url: jdbc:mysql://root:YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT@viaduct.proxy.rlwy.net:15921/railway
+    username: root
+    password: YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: false
+        format_sql: false
+
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://eureka-service.azurewebsites.net
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
