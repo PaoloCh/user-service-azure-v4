@@ -5,6 +5,8 @@ server:
     include-binding-errors: always
 
 spring:
+  application:
+    name: user-service
   datasource:
     url: jdbc:mysql://root:YxqnDcmtxMrpYVuPNojRkVKrfBkftAMT@viaduct.proxy.rlwy.net:15921/railway
     username: root
