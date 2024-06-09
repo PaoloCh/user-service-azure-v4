@@ -27,7 +27,7 @@ logging:
 eureka:
   client:
     service-url:
-      defaultZone: https://eureka-service.azurewebsites.net
+      defaultZone: https://eureka-service.azurewebsites.net/eureka/
 
 management:
   endpoints:
